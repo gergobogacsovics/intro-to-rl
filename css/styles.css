@@ -2347,7 +2347,7 @@ header.masthead {
       rgba(16, 32, 39, 0.7),
       rgba(16, 32, 39, 0.7)
     ),
-    url(../assets/img/background.jpg);
+    url(/assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -2358,10 +2358,10 @@ header.masthead .masthead-content {
   position: relative;
 }
 header.masthead .masthead-content .masthead-heading {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 header.masthead .bg-circle {
   z-index: 0;
