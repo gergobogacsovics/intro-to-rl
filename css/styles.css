@@ -2428,7 +2428,7 @@ header.masthead .bg-circle-4 {
 }
 .card-item {
   padding: 20px;
-  height: 350px !important;
+  min-height: 350px !important;
 }
 .card-item img {
   margin: auto;
