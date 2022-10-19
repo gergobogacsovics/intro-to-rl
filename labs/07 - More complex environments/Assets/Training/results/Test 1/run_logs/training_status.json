@@ -1,0 +1,29 @@
+{
+    "TreasureSearch": {
+        "checkpoints": [
+            {
+                "steps": 42867,
+                "file_path": "results\\Test 1\\TreasureSearch\\TreasureSearch-42867.onnx",
+                "reward": -2.780833085378011,
+                "creation_time": 1666184648.2031488,
+                "auxillary_file_paths": [
+                    "results\\Test 1\\TreasureSearch\\TreasureSearch-42867.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 42867,
+            "file_path": "results\\Test 1\\TreasureSearch.onnx",
+            "reward": -2.780833085378011,
+            "creation_time": 1666184648.2031488,
+            "auxillary_file_paths": [
+                "results\\Test 1\\TreasureSearch\\TreasureSearch-42867.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
