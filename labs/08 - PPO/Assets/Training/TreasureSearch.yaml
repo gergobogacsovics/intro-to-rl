@@ -1,0 +1,22 @@
+behaviors:
+  TreasureSearch:
+    trainer_type: ppo
+    time_horizon: 32 # Typical range: 32 - 2048
+    max_steps: 1e6 # Typical range: 5e5 - 1e7
+    hyperparameters:
+      learning_rate: 1e-4 # Typical range: 1e-5 - 1e-3
+      batch_size: 2048 # Typical range: (Continuous - PPO): 512 - 5120; (Continuous - SAC): 128 - 1024; (Discrete, PPO & SAC): 32 - 512.
+      buffer_size: 50000 # Typical range: PPO: 2048 - 409600; SAC: 50000 - 1000000
+      num_epoch: 3 # Typical range: 3 - 10, Number of passes to make through the experience buffer when performing gradient descent optimization.The larger the batch_size, the larger it is acceptable to make this. Decreasing this will ensure more stable updates, at the cost of slower learning.
+    network_settings:
+      normalize: true
+      num_layers: 3 # Typical range: 1 - 3
+      hidden_units: 256 # Typical range: 32 - 512
+    reward_signals:
+      extrinsic:
+        gamma: 0.9
+        strength: 1.0
+    summary_freq: 50000
+    threaded: true
+torch_settings:
+  device: cpu
