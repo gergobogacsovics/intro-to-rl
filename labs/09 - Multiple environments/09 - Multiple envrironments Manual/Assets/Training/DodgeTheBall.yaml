@@ -1,0 +1,28 @@
+behaviors:
+  DodgeTheBall:
+    trainer_type: ppo
+    time_horizon: 128
+    max_steps: 1e6
+    hyperparameters:
+      learning_rate: 1e-4
+      batch_size: 256
+      buffer_size: 32768
+      num_epoch: 3
+    network_settings:
+      #normalize: true
+      num_layers: 3
+      hidden_units: 256
+    reward_signals:
+      extrinsic:
+        gamma: 0.9
+        strength: 1.0
+      #curiosity:
+      # gamma: 0.99
+      # strength: 0.02
+      # network_settings:
+      #   hidden_units: 256
+      # learning_rate: 0.0003
+    summary_freq: 50000
+    threaded: true
+torch_settings:
+  device: cpu
