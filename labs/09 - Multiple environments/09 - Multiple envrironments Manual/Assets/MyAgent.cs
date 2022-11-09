@@ -45,7 +45,7 @@ public class MyAgent : Agent
             return 1;
         }
         else {
-            //Debug.DrawLine(transform.localPosition, direction * RayCastLength, Color.green);
+            //Debug.DrawLine(transform.localPosition, transform.localPosition + direction * RayCastLength, Color.green);
             return 0;
         }
 
